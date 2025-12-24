@@ -8,9 +8,9 @@
 4. Hitung luas lingkarang dengan cara 3.14 dikali 4 dikali 4
 5. Hitung diameter lingkaran dengan cara 2 dikali 4
 6. Hitung Keliling Lingkaran dengan cara 2 dikali 3.14 dikali 4 
-7. Tampilkan luas lingkaran
-8. Tampilkan diameter lingkaran
-9. Tampilkan Keliling lingkaran
+7. Tampilkan luas lingkaran yang hasilnya 50
+8. Tampilkan diameter lingkaran yang hasilnya 8
+9. Tampilkan Keliling lingkaran yang hasilnya 25
 10. Stop
 
 ```mermaid
