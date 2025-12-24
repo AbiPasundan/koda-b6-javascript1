@@ -16,6 +16,6 @@ const l = phi * r * r
 const d = 2 * r 
 const k = 2 * phi * r 
 
-console.log(`Luas lingkara jika jari-jari adalah ${r} luasnya adalah ${l}`);
-console.log(`Diameter lingkaran jika r adalah ${r} diameternya adalah ${d}`);
-console.log(`Keliling lingkaran jika r adalah ${r} kelilingnya adalah ${k}`);
+console.log(`Luas lingkara jika r nya adalah ${r} maka luas lingkaran adalah ${l}`);
+console.log(`Diameter lingkaran jika r nya adalah ${r} maka diameter lingkaran adalah ${d}`);
+console.log(`Keliling lingkaran jika r nya adalah ${r} maka keliling lingkaran adalah ${k}`);
