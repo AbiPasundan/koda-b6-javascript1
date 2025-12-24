@@ -25,9 +25,9 @@ flowchart TB
  k@{ shape: rect, label: "2 * phi * r "}
 
 
- OutputL@{ shape: lean-r, label: "Output: ''50''"}
+ OutputL@{ shape: lean-r, label: "Output: ''50.24''"}
  OutputD@{ shape: lean-r, label: "Output: ''8''"}
- OutputK@{ shape: lean-r, label: "Output: ''25''"}
+ OutputK@{ shape: lean-r, label: "Output: ''25.12''"}
  Stop@{ shape: dbl-circ, label: "stop"}
 
 Start-->r-->phi-->l-->d-->k-->OutputL-->OutputD-->OutputK-->Stop
