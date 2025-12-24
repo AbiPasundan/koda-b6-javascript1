@@ -16,18 +16,18 @@
 ```mermaid
 flowchart TB
  Start@{ shape: circ, label: "start"}
- r@{ shape: lean-r, label: "r = 4"}
- phi@{ shape: lean-r, label: "phi = 3.14"}
+ r@{ shape: lean-r, label: "input: r = 4"}
+ phi@{ shape: rect, label: "phi = 3.14"}
 
 
- l@{ shape: rect, label: "phi * r * r "}
- d@{ shape: rect, label: "2 * r "}
- k@{ shape: rect, label: "2 * phi * r "}
+ l@{ shape: rect, label: "l = phi * r * r "}
+ d@{ shape: rect, label: "d = 2 * r "}
+ k@{ shape: rect, label: "k = 2 * phi * r "}
 
 
- OutputL@{ shape: lean-r, label: "Output: 50.24"}
- OutputD@{ shape: lean-r, label: "Output: 8"}
- OutputK@{ shape: lean-r, label: "Output: 25.12"}
+ OutputL@{ shape: lean-r, label: "Output: ''jari-jari lingkaran adalah'', l"}
+ OutputD@{ shape: lean-r, label: "Output: ''diameter lingkaran adalah'', d"}
+ OutputK@{ shape: lean-r, label: "Output: ''keliling lingkaran adalah'', k"}
  Stop@{ shape: dbl-circ, label: "stop"}
 
 Start-->r-->phi-->l-->d-->k-->OutputL-->OutputD-->OutputK-->Stop

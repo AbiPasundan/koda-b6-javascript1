@@ -11,14 +11,13 @@
 
 
 //v1
-const r = 4
+let r = 4
 const phi = 3.14
 
 const l = phi * r * r 
 const d = 2 * r 
 const k = 2 * phi * r 
 
-console.log(l);
-console.log(d);
-console.log(k);
-
+console.log("jari-jari lingkaran adalah, "+ l);
+console.log("diameter lingkaran adalah, "+ d);
+console.log("keliling lingkaran adalah, "+ k);
