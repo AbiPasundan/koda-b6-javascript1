@@ -1,7 +1,7 @@
 # Algoritma Javascript
 
-## Task 1
-
+## Task 1 Menghitung Luas, Diameter dan Keliling Lingkaran
+### Algoritma dalam bentuk Deskriptif
 1. Mulai
 2. Tentukan nilai r atau jari-jari dengan angka 4
 3. Tentukan nilai Phi dengan angka 3.14
@@ -12,7 +12,7 @@
 8. Tampilkan diameter lingkaran yang hasilnya 8
 9. Tampilkan Keliling lingkaran yang hasilnya 25
 10. Stop
-
+### Algoritma dalam bentuk Flowchart
 ```mermaid
 flowchart TB
  Start@{ shape: circ, label: "start"}
