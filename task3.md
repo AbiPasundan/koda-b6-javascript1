@@ -50,7 +50,6 @@ flowchart TB
  helloDanOrJohn@{ shape: rect, label: "output: ''Hello'' name"}
  hellojane@{ shape: rect, label: "output: ''Hello'' name"}
 
-
  Stop@{ shape: dbl-circ, label: "Stop"}
 
 
@@ -63,8 +62,8 @@ flowchart TB
  validateAgeDanOrJohnHobbies-->|false|Stop
 
 
- validateNameDanOrJohn-->validateNameDanOrJohnFalse-->|true|validateNameDanOrJohnFalseTrue-->Stop
- validateNameDanOrJohnFalse-->|true|validateNameDanOrJohnFalseFalse-->Stop
+ validateNameDanOrJohn-->|false|validateNameDanOrJohnFalse-->|true|validateNameDanOrJohnFalseTrue-->Stop
+ validateNameDanOrJohnFalse-->|false|validateNameDanOrJohnFalseFalse-->Stop
 
  validateNameJane-->|true|hellojane-->Stop
 ```
