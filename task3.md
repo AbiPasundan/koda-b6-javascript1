@@ -27,16 +27,16 @@ flowchart TB
  Start@{ shape: circ, label: "start"}
  name@{ shape: lean-r, label: "input: name"}
  age@{ shape: lean-r, label: "input: age"}
- hobi@{ shape: lean-r, label: "input: hobbies[''Programing'']"}
+ hobi@{ shape: lean-r, label: "input: hobbies"}
 
- validateNameJane@{ shape: diamond, label: "name === Jane"}
-
-
-
- validateNameDanOrJohn@{ shape: diamond, label: "name === Dan || name === John"}
+ validateNameJane@{ shape: diamond, label: "name === ''Jane''"}
 
 
- validateNameDanOrJohnFalse@{ shape: diamond, label: "name === John"}
+
+ validateNameDanOrJohn@{ shape: diamond, label: "name === ''Dan'' || name === ''John''"}
+
+
+ validateNameDanOrJohnFalse@{ shape: diamond, label: "name === ''John''"}
  validateNameDanOrJohnFalseTrue@{ shape: lean-r, label: "Output: ''Hi '' name"}
  validateNameDanOrJohnFalseFalse@{ shape: lean-r, label: "Output: ''Hola ''"}
 
