@@ -20,9 +20,9 @@ flowchart TB
  phi@{ shape: lean-r, label: "phi = 3.14"}
 
 
- l@{ shape: lean-r, label: "L = phi * r * r "}
- d@{ shape: lean-r, label: "D = 2 * r "}
- k@{ shape: lean-r, label: "K = 2 * phi * r "}
+ l@{ shape: rect, label: "phi * r * r "}
+ d@{ shape: rect, label: "2 * r "}
+ k@{ shape: rect, label: "2 * phi * r "}
 
 
  OutputL@{ shape: lean-r, label: "Output: ''50''"}
