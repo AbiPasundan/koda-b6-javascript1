@@ -18,12 +18,16 @@ flowchart TB
  Start@{ shape: circ, label: "start"}
  r@{ shape: lean-r, label: "r = 4"}
  phi@{ shape: lean-r, label: "phi = 3.14"}
- l@{ shape: rect, label: "L = phi * r * r "}
- d@{ shape: rect, label: "D = 2 * r "}
- k@{ shape: rect, label: "K = 2 * phi * r "}
- OutputL@{ shape: lean-r, label: "Output: L"}
- OutputD@{ shape: lean-r, label: "Output: D"}
- OutputK@{ shape: lean-r, label: "Output: K"}
+
+
+ l@{ shape: lean-r, label: "L = phi * r * r "}
+ d@{ shape: lean-r, label: "D = 2 * r "}
+ k@{ shape: lean-r, label: "K = 2 * phi * r "}
+
+
+ OutputL@{ shape: lean-r, label: "Output: ''50''"}
+ OutputD@{ shape: lean-r, label: "Output: ''8''"}
+ OutputK@{ shape: lean-r, label: "Output: ''25''"}
  Stop@{ shape: dbl-circ, label: "stop"}
 
 Start-->r-->phi-->l-->d-->k-->OutputL-->OutputD-->OutputK-->Stop

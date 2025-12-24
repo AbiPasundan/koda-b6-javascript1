@@ -18,4 +18,4 @@ const k = 2 * phi * r
 
 console.log(`Luas lingkara jika jari-jari adalah ${r} luasnya adalah ${l}`);
 console.log(`Diameter lingkaran jika r adalah ${r} diameternya adalah ${d}`);
-console.log(`Keliling lingkaran jika r adalah ${r} kelilingnya adalah ${d}`);
+console.log(`Keliling lingkaran jika r adalah ${r} kelilingnya adalah ${k}`);
