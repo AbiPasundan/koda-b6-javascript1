@@ -29,24 +29,46 @@
 
 //v1
 let r = 7
-let phi = 3.14
+let phi = 22/7
 
-if(phi === 3.14) {
-    const l = phi * r * r 
-    const d = 2 * r 
-    const k = 2 * phi * r 
+// if(phi === 3.14) {
+//     const l = phi * r * r 
+//     const d = 2 * r 
+//     const k = 2 * phi * r 
 
-    console.log(`luas lingkaran dengan r nya ${r} adalah ${ l}`);
-    console.log(`luas diameter dengan r nya ${r} adalah ${ d}`);
-    console.log(`luas keliling dengan r nya ${r} adalah ${ k}`);
-}else if(phi === 22/7){
-    const l = phi * r * r 
-    const d = 2 * r 
-    const k = 2 * phi * r 
+//     console.log(`luas lingkaran dengan r nya ${r} adalah ${ l}`);
+//     console.log(`luas diameter dengan r nya ${r} adalah ${ d}`);
+//     console.log(`luas keliling dengan r nya ${r} adalah ${ k}`);
+// }else if(phi === 22/7){
+//     const l = phi * r * r 
+//     const d = 2 * r 
+//     const k = 2 * phi * r 
 
-    console.log(`luas lingkaran dengan r nya ${r} adalah ${ l}`);
-    console.log(`luas diameter dengan r nya ${r} adalah ${ d}`);
-    console.log(`luas keliling dengan r nya ${r} adalah ${ k}`);
+//     console.log(`luas lingkaran dengan r nya ${r} adalah ${ l}`);
+//     console.log(`luas diameter dengan r nya ${r} adalah ${ d}`);
+//     console.log(`luas keliling dengan r nya ${r} adalah ${ k}`);
+// } else {
+//     console.log("masukan phi yang benar");
+// }
+
+if(phi === 3.14 || phi === 22/7){
+    if(phi === 3.14){
+        const l = phi * r * r 
+        const d = 2 * r 
+        const k = 2 * phi * r 
+
+        console.log(`luas lingkaran dengan r nya ${r} adalah ${ l}`);
+        console.log(`luas diameter dengan r nya ${r} adalah ${ d}`);
+        console.log(`luas keliling dengan r nya ${r} adalah ${ k}`);
+    } else if (phi === 22/7){
+        const l = phi * r * r 
+        const d = 2 * r 
+        const k = 2 * phi * r 
+
+        console.log(`luas lingkaran dengan r nya ${r} adalah ${ l}`);
+        console.log(`luas diameter dengan r nya ${r} adalah ${ d}`);
+        console.log(`luas keliling dengan r nya ${r} adalah ${ k}`);
+    }
 } else {
-    console.log("masukan phi yang benar");
+    console.log("stop");
 }
