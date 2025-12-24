@@ -1,7 +1,7 @@
 const we = {
     are: {
         the: {
-            best: "koda"
+            best: "Koda"
         }
     }
 }
