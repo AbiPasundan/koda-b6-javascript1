@@ -45,7 +45,7 @@ flowchart TB
  validateAgeDanOrJohnFalse@{ shape: lean-r, label: "Output: ''Let's go to school!''"}
 
  validateAgeDanOrJohnHobbies@{ shape: diamond, label: "hobbies[0] === ''Programming''"}
- validateAgeDanOrJohnHobbiesTrue@{ shape: lean-r, label: " Output ''I love JavaScript!''"}
+ validateAgeDanOrJohnHobbiesTrue@{ shape: lean-r, label: " Output: ''I love JavaScript!''"}
 
  helloDanOrJohn@{ shape: rect, label: "output: ''Hello'' name"}
  hellojane@{ shape: rect, label: "output: ''Hello'' name"}
