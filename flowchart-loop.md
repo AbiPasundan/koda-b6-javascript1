@@ -58,6 +58,6 @@ do {
         If-->|true|Condition
 
         Check-->|true|PrintX
-        Check-->Stop
+        Check-->|false|Stop
         
 ```
