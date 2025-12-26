@@ -7,7 +7,7 @@
         Start@{ shape: circ, label: "start"}
 
         InitialVar@{ shape: lean-r, label: "x = 1"}
-        Condition@{ shape: diamond, label: "x <= 1"}
+        Condition@{ shape: diamond, label: "x <= 10"}
         ConditionTrue@{ shape: rect, label: "x++"}
 
         ConditionTruePrint@{ shape: lean-r, label: "Output: x"}
