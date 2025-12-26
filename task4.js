@@ -1,18 +1,12 @@
-// Konversi suhu dari suhu awal 
-// inputnya 3 output satu
-
-// buat flowchart kemudian buat program
-
-// let temp = 34 // harus number
-// let tempSource = "farenheit" // str
-// let convertTo = "celcius" // str
-
 let temp = 32
 let tempSource = "Kelvin"
-let convertTo = "Reamure"
+let convertTo = 123
 
 if (typeof temp === "number") {
-    switch (tempSource) {
+    if (tempSource === "string" && convertTo === "string") {
+        console.log("Harus str");
+    } else {
+        switch (tempSource) {
         case "Farenheit":
             switch (convertTo) {
                 case "Celcius":{
@@ -102,18 +96,12 @@ if (typeof temp === "number") {
                     break;
                 }
                 case "Kelvin":{
-                        console.log(error);
+                        console.log("error");
                     break;
                 }
             } 
     }
+    }
 } else {
     console.log("masukan tipe data number");
 }
-
-
-
-const celcius = 40
-const celciusToFarenheit = (celcius * 9/5) + 32
-const celciusToReamure = celcius * 4 / 5
-const celciusToKelvin = celcius + 273
