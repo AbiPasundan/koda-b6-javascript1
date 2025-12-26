@@ -16,12 +16,16 @@
         DefaultTrue@{ shape: lean-r, label: "Output: num"}
         DefaultFalse@{ shape: lean-r, label: "Output: ''Bonjour!''"}
 
+
+        Break1@{ shape: rect, label: "Beak"}
+        Break2@{ shape: rect, label: "Beak"}
+
         Stop@{ shape: dbl-circ, label: "Stop"}
 
     Start-->IS_FEATURE_ACTIVE-->num-->CaseTrue-->|False|CaseFalse-->|false|Default-->|false|DefaultFalse-->Stop
 
-    CaseTrue-->|true|OutputTrue-->Stop
-    CaseFalse-->|true|OutputFalse-->Stop
+    CaseTrue-->|true|OutputTrue-->Break1-->Stop
+    CaseFalse-->|true|OutputFalse-->Break2-->Stop
 
     Default-->|true|DefaultTrue-->Stop
 ```
