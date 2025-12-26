@@ -29,7 +29,6 @@
 
 ```js
 let x = 1
-
 do {
     console.log(x)
     if (x === 5) {
@@ -50,9 +49,15 @@ do {
 
         Condition@{ shape: rect, label: "x++"}
 
+        Check@{ shape: diamond, label: "x <= 10"}
+
         Stop@{ shape: dbl-circ, label: "Stop"}
 
-        Start-->InitialVar-->PrintX-->If-->|false|IfTrue-->Condition-->If
+        Start-->InitialVar-->PrintX-->If-->|false|IfTrue-->Condition-->Check-->|true|If
 
         If-->|true|Stop
+
+        Check-->|false|Condition
+
+        
 ```
