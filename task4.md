@@ -27,8 +27,6 @@
         
         %% SAMBUNGAN AWAL END
 
-        
-
         %% CONVERT FARENHEIT START
         isStringTrueFC@{ shape: diamond, label:  "convertTo == ''Celcius''"}
         isStringTrueFCVar@{ shape: rect, label:  "temp = ((temp - 32) * (5/9) )"}
@@ -47,17 +45,37 @@
 
         %% SAMBUNGAN START
         isStringTrueFC-- false --> isStringTrueFR -- true --> isStringTrueFRVar --> isStringTrueFROut-->Stop
-
         isStringTrueFR -- false --> isStringTrueFK -- true --> isStringTrueFKVar --> isStringTrueFKOut -->Stop
-
         isStringTrueFK -- false --> isStringTrueFF -- true --> isStringTrueFFOut -->Stop
-
         isStringTrueFF -- false  -->Stop
-
-        %% isStringTrueFC -- true -->isStringTrueFCVar
         %% SAMBUNGAN END
-
         %% CONVERT FARENHEIT END
+
+        %% CONVERT CELCIUS START
+        isStringTrueCF@{ shape: diamond, label:  "convertTo == ''Farenheit''"}
+        isStringTrueCFVar@{ shape: rect, label:  "temp = (temp * 9/5) + 32"}
+        isStringTrueCFOut@{ shape: lean-r, label:  "output: temp"}
+
+        isStringTrueCK@{ shape: diamond, label:  "convertTo == ''Kelvin''"}
+        isStringTrueCKVar@{ shape: rect, label:  "temp = temp + 273"}
+        isStringTrueCKOut@{ shape: rect, label:  "output: temp"}
+
+        isStringTrueCR@{ shape: diamond, label:  "convertTo == ''Kelvin''"}
+        isStringTrueCRVar@{ shape: rect, label:  "temp = temp * 4/5"}
+        isStringTrueCROut@{ shape: rect, label:  "output: temp"}
+
+        isStringTrueCC@{ shape: diamond, label:  "convertTo == ''Celcius''"}
+        isStringTrueCCOut@{ shape: rect, label:  "output: ''error''"}
+
+        %% SAMUNGAN START
+        isStringTrue-->|false|isStringTrueCF-->|false|isStringTrueCFVar-->isStringTrueCFOut-->Stop
+        isStringTrueCF-->|true|isStringTrueCK-->|true|isStringTrueCKVar-->isStringTrueCKOut-->Stop
+
+        isStringTrueCK-->|false|isStringTrueCC-->|true|isStringTrueCCOut-->Stop
+        isStringTrueCC-->Stop
+
+        %% SAMUNGAN END
+        %% CONVERT CELCIUS END
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
