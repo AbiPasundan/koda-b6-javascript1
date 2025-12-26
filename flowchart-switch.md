@@ -7,14 +7,14 @@
         num@{ shape: lean-r, label: "input: num = 100"}
 
         CaseTrue@{ shape: diamond, label: "IS_FEATURE_ACTIVE == true"}
-        OutputTrue@{ shape: rect, label: "Print: ''Hello''"}
+        OutputTrue@{ shape: lean-r, label: "Output: ''Hello''"}
 
         CaseFalse@{ shape: diamond, label: "IS_FEATURE_ACTIVE == false"}
-        OutputFalse@{ shape: rect, label: "Print: ''Hi''"}
+        OutputFalse@{ shape: lean-r, label: "Output: ''Hi''"}
 
         Default@{ shape: diamond, label: "num === 100"}
-        DefaultTrue@{ shape: rect, label: "Print: num"}
-        DefaultFalse@{ shape: rect, label: "Print: ''Bonjour!''"}
+        DefaultTrue@{ shape: lean-r, label: "Output: num"}
+        DefaultFalse@{ shape: lean-r, label: "Output: ''Bonjour!''"}
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
