@@ -4,12 +4,12 @@
     flowchart TB
         Start@{ shape: circ, label: "start"}
         IS_FEATURE_ACTIVE@{ shape: lean-r, label: "input: IS_FEATURE_ACTIVE = ''''"}
-        num@{ shape: lean-r, label: "inputp: num = 100"}
+        num@{ shape: lean-r, label: "input: num = 100"}
 
         CaseTrue@{ shape: diamond, label: "IS_FEATURE_ACTIVE == true"}
         OutputTrue@{ shape: rect, label: "Print: ''Hello''"}
 
-        CaseFalse@{ shape: diamond, label: "inputp: num = 100"}
+        CaseFalse@{ shape: diamond, label: "IS_FEEATURE_ACTIVE == false"}
         OutputFalse@{ shape: rect, label: "Print: ''Hi''"}
 
         Default@{ shape: diamond, label: "num === 1000"}
