@@ -18,12 +18,7 @@ if (typeof temp === "number") {
                     break;
                 }
                 case "Kelvin":{
-                    temp = (32 - 32) * 5/9 + 273,15
-                    console.log(temp);
-                    break;
-                }
-                case "Kelvin":{
-                    temp = (32 - 32) * 5/9 + 273,15
+                    temp = (32 - 32) * 5/9 + 273.15
                     console.log(temp);
                     break;
                 }
@@ -100,7 +95,7 @@ if (typeof temp === "number") {
             } 
     }
     } else {
-        console.log("Harus str");
+        console.log("Harus string");
         
     }
 } else {

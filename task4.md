@@ -60,9 +60,6 @@
         isStringTrueCKVar@{ shape: rect, label:  "temp = temp + 273"}
         isStringTrueCKOut@{ shape: rect, label:  "output: temp"}
 
-        isStringTrueCR@{ shape: diamond, label:  "convertTo == ''Kelvin''"}
-        isStringTrueCRVar@{ shape: rect, label:  "temp = temp * 4/5"}
-        isStringTrueCROut@{ shape: rect, label:  "output: temp"}
 
         isStringTrueCC@{ shape: diamond, label:  "convertTo == ''Celcius''"}
         isStringTrueCCOut@{ shape: rect, label:  "output: ''error''"}
@@ -72,10 +69,9 @@
         isStringTrueCF-->|true|isStringTrueCK-->|true|isStringTrueCKVar-->isStringTrueCKOut-->Stop
 
         isStringTrueCK-->|false|isStringTrueCC-->|true|isStringTrueCCOut-->Stop
-        isStringTrueCC-->Stop
-
         %% SAMUNGAN END
         %% CONVERT CELCIUS END
+
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
