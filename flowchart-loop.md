@@ -36,3 +36,21 @@ do {
     }
 } while (x<=1);
 ```
+
+```mermaid
+    flowchart TB
+        Start@{ shape: circ, label: "start"}
+        InitialVar@{ shape: lean-r, label: "input: x = 1"}
+        PrintX@{ shape: lean-r, label: "output: x"}
+
+        If@{ shape: diamond, label: "x === 5"}
+        IfTrue@{ shape: rect, label: "x = 5"}
+
+        Condition@{ shape: rect, label: "x++"}
+
+        Stop@{ shape: dbl-circ, label: "Stop"}
+
+        Start-->InitialVar-->PrintX-->If-->|true|IfTrue-->Condition-->If
+
+        If-->Stop
+```
