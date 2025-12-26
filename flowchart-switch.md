@@ -19,13 +19,14 @@
 
         Break1@{ shape: rect, label: "Beak"}
         Break2@{ shape: rect, label: "Beak"}
+        Break3@{ shape: rect, label: "Beak"}
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
-    Start-->IS_FEATURE_ACTIVE-->num-->CaseTrue-->|False|CaseFalse-->|false|Default-->|false|DefaultFalse-->Stop
+    Start-->IS_FEATURE_ACTIVE-->num-->CaseTrue-->|False|CaseFalse-->|false|Default-->|false|DefaultFalse-->Break3-->Stop
 
     CaseTrue-->|true|OutputTrue-->Break1-->Stop
     CaseFalse-->|true|OutputFalse-->Break2-->Stop
 
-    Default-->|true|DefaultTrue-->Stop
+    Default-->|true|DefaultTrue-->Break3
 ```
