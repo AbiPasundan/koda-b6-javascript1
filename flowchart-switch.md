@@ -16,17 +16,14 @@
         DefaultTrue@{ shape: lean-r, label: "Output: num"}
         DefaultFalse@{ shape: lean-r, label: "Output: ''Bonjour!''"}
 
-
-        Break1@{ shape: rect, label: "Beak"}
-        Break2@{ shape: rect, label: "Beak"}
-        Break3@{ shape: rect, label: "Beak"}
+        Lanjut@{ shape: lean-r, label: "Output: ''Lanjut''"}
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
-    Start-->IS_FEATURE_ACTIVE-->num-->CaseTrue-->|False|CaseFalse-->|false|Default-->|false|DefaultFalse-->Break3-->Stop
+    Start-->IS_FEATURE_ACTIVE-->num-->CaseTrue-->|False|CaseFalse-->|false|Default-->|false|DefaultFalse-->Lanjut
 
-    CaseTrue-->|true|OutputTrue-->Break1-->Stop
-    CaseFalse-->|true|OutputFalse-->Break2-->Stop
+    CaseTrue-->|true|OutputTrue-->Lanjut
+    CaseFalse-->|true|OutputFalse-->Lanjut
 
-    Default-->|true|DefaultTrue-->Break3
+    Default-->|true|DefaultTrue-->Lanjut-->Stop
 ```
