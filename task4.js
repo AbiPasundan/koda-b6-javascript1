@@ -1,11 +1,9 @@
 let temp = 32
 let tempSource = "Kelvin"
-let convertTo = 123
+let convertTo = "Celcius"
 
 if (typeof temp === "number") {
-    if (tempSource === "string" && convertTo === "string") {
-        console.log("Harus str");
-    } else {
+    if (typeof tempSource === "string" && typeof convertTo === "string") {
         switch (tempSource) {
         case "Farenheit":
             switch (convertTo) {
@@ -101,6 +99,9 @@ if (typeof temp === "number") {
                 }
             } 
     }
+    } else {
+        console.log("Harus str");
+        
     }
 } else {
     console.log("masukan tipe data number");
