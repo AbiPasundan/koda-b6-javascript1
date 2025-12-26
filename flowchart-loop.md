@@ -28,6 +28,8 @@
 ## dowhile
 
 ```js
+let x = 1
+
 do {
     console.log(x)
     if (x === 5) {
@@ -44,7 +46,7 @@ do {
         PrintX@{ shape: lean-r, label: "output: x"}
 
         If@{ shape: diamond, label: "x === 5"}
-        IfTrue@{ shape: rect, label: "x = 5"}
+        IfTrue@{ shape: rect, label: "x = 10"}
 
         Condition@{ shape: rect, label: "x++"}
 
