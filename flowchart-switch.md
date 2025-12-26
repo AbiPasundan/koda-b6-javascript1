@@ -9,10 +9,10 @@
         CaseTrue@{ shape: diamond, label: "IS_FEATURE_ACTIVE == true"}
         OutputTrue@{ shape: rect, label: "Print: ''Hello''"}
 
-        CaseFalse@{ shape: diamond, label: "IS_FEEATURE_ACTIVE == false"}
+        CaseFalse@{ shape: diamond, label: "IS_FEATURE_ACTIVE == false"}
         OutputFalse@{ shape: rect, label: "Print: ''Hi''"}
 
-        Default@{ shape: diamond, label: "num === 1000"}
+        Default@{ shape: diamond, label: "num === 100"}
         DefaultTrue@{ shape: rect, label: "Print: num"}
         DefaultFalse@{ shape: rect, label: "Print: ''Bonjour!''"}
 
