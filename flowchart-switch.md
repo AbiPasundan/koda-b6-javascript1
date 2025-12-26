@@ -10,7 +10,7 @@
         OutputTrue@{ shape: rect, label: "Print: ''Hello''"}
 
         CaseFalse@{ shape: diamond, label: "inputp: num = 100"}
-        OutputFalse@{ shape: rect, label: "Output: ''Hi''"}
+        OutputFalse@{ shape: rect, label: "Print: ''Hi''"}
 
         Default@{ shape: diamond, label: "num === 1000"}
         DefaultTrue@{ shape: rect, label: "Print: num"}
