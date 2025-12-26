@@ -15,7 +15,6 @@
         If@{ shape: diamond, label: "x === 5"}
         IfTrue@{ shape: lean-r, label: "x = 5"}
 
-        ConditionFalse@{ shape: rect, label: "i <= 1"}
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
