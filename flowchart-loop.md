@@ -18,11 +18,12 @@
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
-        Start-->InitialVar-->Condition-->|true|ConditionTruePrint-->ConditionTrue-->If-->|true|IfTrue-->Stop
+        Start-->InitialVar-->Condition-->|true|ConditionTruePrint-->ConditionTrue
 
         Condition-->|false|If
         ConditionTrue-->Condition
 
+        If-->|true|IfTrue-->Stop
         If-->|false|Stop
 
 ```
