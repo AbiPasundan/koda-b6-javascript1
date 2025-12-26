@@ -16,7 +16,7 @@
         DefaultTrue@{ shape: lean-r, label: "Output: num"}
         DefaultFalse@{ shape: lean-r, label: "Output: ''Bonjour!''"}
 
-        Lanjut@{ shape: lean-r, label: "Output: ''Lanjut''"}
+        Lanjut@{ shape: lean-r, label: "Output: ''Lanjutkan''"}
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
