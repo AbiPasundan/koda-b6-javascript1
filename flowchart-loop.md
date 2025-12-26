@@ -50,7 +50,7 @@ do {
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
-        Start-->InitialVar-->PrintX-->If-->|true|IfTrue-->Condition-->If
+        Start-->InitialVar-->PrintX-->If-->|false|IfTrue-->Condition-->If
 
-        If-->Stop
+        If-->|true|Stop
 ```
