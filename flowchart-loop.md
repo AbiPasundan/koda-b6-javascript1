@@ -53,11 +53,11 @@ do {
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
-        Start-->InitialVar-->PrintX-->If-->|false|IfTrue-->Condition-->Check-->|true|If
+        Start-->InitialVar-->PrintX-->If-->|false|IfTrue-->Condition-->Check
 
-        If-->|true|Stop
+        If-->|true|Condition
 
-        Check-->|false|Condition
-
+        Check-->|true|PrintX
+        Check-->Stop
         
 ```
